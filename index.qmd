@@ -3,7 +3,7 @@ comments: false
 date: "`r Sys.Date()`"
 ---
 
-# Welcom {.unnumbered}
+# Welcome {.unnumbered}
 
 PipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.
 

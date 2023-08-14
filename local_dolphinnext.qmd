@@ -9,25 +9,29 @@ format:
     css: styles.css
 ---
 
-::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow}
-<div>
+<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
 
-::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans}
-[1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700}
-:::
+<!-- <div> -->
+
+<!-- ::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans} [1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700} // ::: -->
+
+**1. Pull DolphinNext-studio docker image:**
 
 docker pull ummsbiocore/dolphinnext-studio
 
-</div>
-:::
+<!-- </div> -->
 
-::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow}
-<div>
+<!-- ::: -->
+
+<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
+
+<!-- <div> -->
 
 **2. Start the container:**
 
-</div>
-:::
+<!-- </div> -->
+
+<!-- ::: -->
 
 **3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like \~/export, for this purpose.**
 
