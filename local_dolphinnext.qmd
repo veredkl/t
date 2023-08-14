@@ -1,0 +1,36 @@
+---
+title: 'How to set a local dolphinnext instant?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: 
+  html:
+    css: styles.css
+---
+
+::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow}
+<div>
+
+::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans}
+[1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700}
+:::
+
+docker pull ummsbiocore/dolphinnext-studio
+
+</div>
+:::
+
+**2. Start the container:**
+
+**3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like \~/export, for this purpose.**
+
+mkdir \~/export
+
+**4. docker run --privileged -m 10G -p 8080:80 -v \~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash**
+
+**5. After you start the container, you need to start the mysql and apache server using the command: startup**
+
+**6. Navigate to http://localhost:8080/dolphinnext/**
+
+**7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial**

@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines",
+    "section": "",
+    "text": "Welcom\nPipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.\nThe pipelines are implemented with DolphinNext.\nWe have devided the pipelines into two main sections: 1. Pre-processing 2. Downstream analysis"
+  },
+  {
+    "objectID": "index.html#repository-layout",
+    "href": "index.html#repository-layout",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines",
+    "section": "Repository layout",
+    "text": "Repository layout\nIn each section directory you can find each of the pipelines directories containing the dolphinnext pipeline (XX.dn) as well as the configurations and the nextflow script (XX.nf)"
+  },
+  {
+    "objectID": "index.html#pre-processing",
+    "href": "index.html#pre-processing",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines",
+    "section": "Pre-processing",
+    "text": "Pre-processing\nIn this section you can find pipelines to process the sequencer output files, meaning from ‘raw reads’ into an aligner ready fasta file.\nThe pipeplines were build based on the immcantation framework and spesificly the pRESTO tool suite.\n\nAvailable pipelines:\n\npipline1 - Stern2014 - UMI Barcoded Illumina MiSeq 2x250 BCR mRNA\npipline2 - Greiff2014 - Illumina MiSeq 2x250 BCR mRNA\npipline3 - VanderHeiden2017 - UMI Barcoded Illumina MiSeq 325+275 paired-end 5’RACE BCR mRNA\npipline4 - Galson2020 - UMI Barcoded Illumina MiSeq 2x300 BCR mRNA with FR1 primers\npipline5 - Yaari1 - 5’RACE UMI barcoded Illumina Miseq 2x300 pair-end\npipline6 - Yaari2 - 5’RACE M1S and Z tags to sample pair-end reads"
+  },
+  {
+    "objectID": "index.html#downstream-analysis",
+    "href": "index.html#downstream-analysis",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines",
+    "section": "Downstream analysis",
+    "text": "Downstream analysis\nIn this section you can find pipelines to analyze processed reads and infer genotype and haplotype.\nThe pipeplines were build based on the Yaari lab framework, that contains tools from: - immcantaton - VDJbase - TIgGER - RAbHIT - PIgLET\n\nAvailable pipelines:\n\nASC2022 - IGH BCR repertoires analysis with IgBLAST sequence alignment, novel allele inference by TIgGER, and genotype inference by PIgLET."
+  },
+  {
+    "objectID": "local_dolphinnext.html",
+    "href": "local_dolphinnext.html",
+    "title": "1  How to set a local dolphinnext instant?",
+    "section": "",
+    "text": "1. Pull DolphinNext-studio docker image:\n\ndocker pull ummsbiocore/dolphinnext-studio\n\n\n2. Start the container:\n3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.\nmkdir ~/export\n4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n5. After you start the container, you need to start the mysql and apache server using the command: startup\n6. Navigate to http://localhost:8080/dolphinnext/\n7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial"
+  },
+  {
+    "objectID": "import_pipeline.html",
+    "href": "import_pipeline.html",
+    "title": "2  How to import a pipeline to dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “new pipeline” button\n\n4. Click on “Input Pipeline”\n\n5. Click on “Select File” button\n\n6. Choose the “.dn” file\n\n7. Click on “Next” button\n\n8. Click on “Import” button\n\n9. Click on “Complete” button"
+  },
+  {
+    "objectID": "run_pipeline.html",
+    "href": "run_pipeline.html",
+    "title": "3  How to run a pipeline in dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on “Run” button\n\n5. Click on “Create New Run” option\n\n6. Choose the Project or create a new one\n\n7. Click on “Select Project” button\n\n8. Enter run name and click on “Save run”\n\n9. Choose run enviroment\n\n10. Enter work directory\n\n11. Enter the files and values the pipeline need\n\n12. Click on “Run” button\n\n13. Choose “Start” option\n\n14. For more information how to run pipeline go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html\n15. For information about the run page go to  https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html"
+  },
+  {
+    "objectID": "default_param.html",
+    "href": "default_param.html",
+    "title": "4  How to set pipeline default parameters and run environment?",
+    "section": "",
+    "text": "1. Choose your pipeline\n\n2. Click on “Advanced” tab\n\n3. Go to “Pipeline Header Script” section \n\n4. First add for each process an option to change the parameters. To do that, the first step must be access the params variable, then the module name and finally the process name.\n\n**5. To set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.\nA dirty script that receive a csv file and return a txt file with the text of defined the parameters available here …………**\n\n6. Different run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.\n\n7. Save the change\n\n8. Click on “Overwrite” to save"
+  },
+  {
+    "objectID": "hardcode_tweak_param.html",
+    "href": "hardcode_tweak_param.html",
+    "title": "5  How to hardcode tweak parameters for an imported pipeline?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on “Advanced” tab\n\n5. See the default parameter in the “Pipeline Header Script”\n\n6. Find the parameter you want to change and set him to the new value\n\n7. Save the change\n\n8. Click on “Overwrite” or “Save as New Revision” button\n\n9. Export the Tweak pipeline"
+  },
+  {
+    "objectID": "export_a_pipeline.html",
+    "href": "export_a_pipeline.html",
+    "title": "6  How to export a pipeline from dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Choose your pipeline\n\n5. Click on “Download Pipeline”"
+  },
+  {
+    "objectID": "build_process.html",
+    "href": "build_process.html",
+    "title": "7  How to build a process in dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Process” button\n\n5. Enter input output params\n\n6. Write the script\n\n7. For more information go to\nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/process.html"
+  },
+  {
+    "objectID": "build_module.html",
+    "href": "build_module.html",
+    "title": "8  How to build a module in dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
+  },
+  {
+    "objectID": "build_pipeline.html",
+    "href": "build_pipeline.html",
+    "title": "9  How to build a pipeline in dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
+  },
+  {
+    "objectID": "two_dockers.html",
+    "href": "two_dockers.html",
+    "title": "10  Is it possible to run a pipeline with 2 dockers?",
+    "section": "",
+    "text": "1. Choose your pipeline\n\n2. show “Workflow”\n\n3. This process need to run on a “milaboratory/mixcr:latest” docker image\n\n4. This process need to run on a “ssnnm/mhecd4tcr:0.1.0” docker image\n\n5. Click on “Advanced” tab\n\n6. How to define the containers:\nThe docker images needed to defined on the the nextflow.config file as a new process contains “container=” the main docker image and for each process that needed to run with different docker write “WithName:” the process name and in {} “container=” the image docker for this step."
+  }
+]

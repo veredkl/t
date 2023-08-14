@@ -1,0 +1,47 @@
+project:
+  type: book
+  output-dir: "docs"
+  preview:
+    port: 4200
+    browser: true
+
+book:
+  title: "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines"
+  #contact: "gur.yaari@biu.ac.il"
+  sidebar:
+    style: docked
+    background: none
+  search: true
+  site-url: https://PipeAIRR.github.io/pipeAIRR/
+  repo-url: https://github.com/PipeAIRR/pipeAIRR/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  #collapse-level: 1
+  page-navigation: true
+  page-footer: "© Copyright 2022 of YaariLab (gur.yaari@biu.ac.il), website licensed under the [CC BY-NC-ND, 4.0] (https://creativecommons.org/licenses/by-nc-nd/4.0/)"
+  chapters:
+    - index.qmd
+    - part: "Frequent questions and guides"
+      chapters:
+      - local_dolphinnext.qmd
+      - import_pipeline.qmd
+      - run_pipeline.qmd
+      - default_param.qmd
+      - hardcode_tweak_param.qmd
+      - export_a_pipeline.qmd
+      - build_process.qmd
+      - build_module.qmd
+      - build_pipeline.qmd
+      - two_dockers.qmd
+    
+comments:
+  giscus:
+        repo:  PipeAIRR/pipeAIRR
+  
+format:
+  html:
+    theme: [Journal]
+    css: [style.css, index.css]
+
+
+

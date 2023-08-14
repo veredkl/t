@@ -1,0 +1,32 @@
+---
+title: 'How to build a process in dolphinNext?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+**1. Launch your dolphinnext docker**
+
+**2. Navigate to http://localhost:8080/dolphinnext/**
+
+**3. Click on "Pipelines" tab**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/e2018c56-2f78-4b7c-a534-afaf96d67fc0/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1075,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=157,-1)
+
+**4. Click on "New Process" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/13447b2b-a5fb-44cf-9abd-b7b7acf23d94/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1075,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=33,101)
+
+**5. Enter input output params**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/20f12c2f-e4ac-46a5-819d-8f80a75b165b/ascreenshot.jpeg?tl_px=0,301&br_px=1075,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=65,143)
+
+**6. Write the script**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/8e35b6f5-ab89-4ea2-b260-5ff8e6c68298/ascreenshot.jpeg?tl_px=0,191&br_px=1075,792&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=78,138)
+
+**7. For more information go to**
+
+https://dolphinnext.readthedocs.io/en/latest/dolphinNext/process.html 
