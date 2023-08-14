@@ -21,7 +21,13 @@ docker pull ummsbiocore/dolphinnext-studio
 </div>
 :::
 
+::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow}
+<div>
+
 **2. Start the container:**
+
+</div>
+:::
 
 **3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like \~/export, for this purpose.**
 

@@ -220,7 +220,11 @@ ul.task-list li input[type="checkbox"] {
 <p>docker pull ummsbiocore/dolphinnext-studio</p>
 </div>
 </div>
+<div class="box-border flex h-auto w-full flex-col rounded-2xl bg-white p-4 shadow">
+<div>
 <p><strong>2. Start the container:</strong></p>
+</div>
+</div>
 <p><strong>3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.</strong></p>
 <p>mkdir ~/export</p>
 <p><strong>4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash</strong></p>
