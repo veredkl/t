@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcom</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -212,19 +212,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="box-border flex h-auto w-full flex-col rounded-2xl bg-white p-4 shadow">
-<div>
-<div class="flex w-full flex-row mr-4 flex flex-grow flex-row bg-opacity-0 font-sans">
-<p><span class="group-one flex h-10 w-10 flex-shrink-0 cursor-pointer flex-col items-center justify-center rounded-full font-sans text-base bg-indigo-50 text-indigo-500 font-bold mr-4">1.</span> <span class="m-0 flex h-auto w-full flex-grow-0 flex-col justify-center align-middle leading-6 text-blueGray-700"><strong>Pull DolphinNext-studio docker image:</strong></span></p>
-</div>
+<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
+<!-- <div> -->
+<!-- ::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans} [1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700} // ::: -->
+<p><strong>1. Pull DolphinNext-studio docker image:</strong></p>
 <p>docker pull ummsbiocore/dolphinnext-studio</p>
-</div>
-</div>
-<div class="box-border flex h-auto w-full flex-col rounded-2xl bg-white p-4 shadow">
-<div>
+<!-- </div> -->
+<!-- ::: -->
+<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
+<!-- <div> -->
 <p><strong>2. Start the container:</strong></p>
-</div>
-</div>
+<!-- </div> -->
+<!-- ::: -->
 <p><strong>3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.</strong></p>
 <p>mkdir ~/export</p>
 <p><strong>4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash</strong></p>
@@ -373,7 +372,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcom</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

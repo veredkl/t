@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines",
     "section": "",
-    "text": "Welcom\nPipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.\nThe pipelines are implemented with DolphinNext.\nWe have devided the pipelines into two main sections: 1. Pre-processing 2. Downstream analysis"
+    "text": "Welcome\nPipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.\nThe pipelines are implemented with DolphinNext.\nWe have devided the pipelines into two main sections: 1. Pre-processing 2. Downstream analysis"
   },
   {
     "objectID": "index.html#repository-layout",
@@ -32,7 +32,7 @@
     "href": "local_dolphinnext.html",
     "title": "1  How to set a local dolphinnext instant?",
     "section": "",
-    "text": "1. Pull DolphinNext-studio docker image:\n\ndocker pull ummsbiocore/dolphinnext-studio\n\n\n\n\n2. Start the container:\n\n\n3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.\nmkdir ~/export\n4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n5. After you start the container, you need to start the mysql and apache server using the command: startup\n6. Navigate to http://localhost:8080/dolphinnext/\n7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial"
+    "text": "1. Pull DolphinNext-studio docker image:\ndocker pull ummsbiocore/dolphinnext-studio\n\n\n\n\n2. Start the container:\n\n\n3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.\nmkdir ~/export\n4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n5. After you start the container, you need to start the mysql and apache server using the command: startup\n6. Navigate to http://localhost:8080/dolphinnext/\n7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial"
   },
   {
     "objectID": "import_pipeline.html",
