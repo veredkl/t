@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines - 1&nbsp; How to set a local dolphinnext instant?</title>
+<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines - 4&nbsp; How to Create a Run with tweak parametrs in DolphinNext?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./import_pipeline.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./hardcode_tweak_param.html" rel="next">
+<link href="./run_pipeline.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +65,6 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -77,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./local_dolphinnext.html">Loading a local instance of DolphinNext</a></li><li class="breadcrumb-item"><a href="./local_dolphinnext.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tweak_and_run.html">Tweaking existing pipeline parameters</a></li><li class="breadcrumb-item"><a href="./tweak_and_run.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -136,16 +135,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Loading a local instance of DolphinNext</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./local_dolphinnext.html" class="sidebar-item-text sidebar-link active">
+  <a href="./local_dolphinnext.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></span></a>
   </div>
 </li>
@@ -176,16 +175,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Tweaking existing pipeline parameters</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tweak_and_run.html" class="sidebar-item-text sidebar-link">
+  <a href="./tweak_and_run.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></span></a>
   </div>
 </li>
@@ -274,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></h1>
 </div>
 
 
@@ -289,24 +288,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
-<!-- <div> -->
-<!-- ::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans} [1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700} // ::: -->
-<p><strong>1. Pull DolphinNext-studio docker image:</strong></p>
-<p>docker pull ummsbiocore/dolphinnext-studio</p>
-<!-- </div> -->
-<!-- ::: -->
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
-<!-- <div> -->
-<p><strong>2. Start the container:</strong></p>
-<!-- </div> -->
-<!-- ::: -->
-<p><strong>3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.</strong></p>
-<p>mkdir ~/export</p>
-<p><strong>4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash</strong></p>
-<p><strong>5. After you start the container, you need to start the mysql and apache server using the command: startup</strong></p>
-<p><strong>6. Navigate to http://localhost:8080/dolphinnext/</strong></p>
-<p><strong>7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial</strong></p>
+<p><strong>1. Launch your dolphinnext docker</strong></p>
+<p><strong>2. Navigate to http://localhost:8080/dolphinnext/</strong></p>
+<p><strong>3. Choose your pipeline</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/62337b6c-91d5-45f4-8e26-44bf6da43584/user_cropped_screenshot.jpeg?tl_px=0,58&amp;br_px=982,607&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=40,138" class="img-fluid"></p>
+<p><strong>4. Click on “run” button</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/08e0f90f-e55a-49e4-97c6-593ce3029ea8/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=498,69" class="img-fluid"></p>
+<p><strong>5. Choose “Create New Run”</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/a2c3bd1c-4205-4d72-9f93-cddc0771df2b/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=466,90" class="img-fluid"></p>
+<p><strong>6. Select a project</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/a11ce0db-69a5-4987-8dac-0e5a4162b580/ascreenshot.jpeg?tl_px=200,0&amp;br_px=1920,902&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=369,174" class="img-fluid"></p>
+<p><strong>7. Enter run name and click on “Save run” button</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/1ae345f2-397c-482e-96c0-cbcc32f1dac9/screenshot.png?tl_px=130,0&amp;br_px=989,353&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
+<p><strong>8. Find the module of the parameter you want to change </strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/013ac254-1b8b-4760-8f34-68d66fae1900/ascreenshot.jpeg?tl_px=325,6&amp;br_px=1400,607&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,138" class="img-fluid"></p>
+<p><strong>9. Change the no to yes and click on the settings button </strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/f0a6d747-0c88-49f8-91e4-b119ddd08dc1/ascreenshot.jpeg?tl_px=402,0&amp;br_px=1477,601&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,138" class="img-fluid"></p>
+<p><strong>10. Enter the new parametrs for this module, the parametrs that appear is the default in the module (not in the pipeline)</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/7ab3b8df-d3df-4a37-8f1a-7cbf76937a12/ascreenshot.jpeg?tl_px=0,0&amp;br_px=1075,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=37,66" class="img-fluid"></p>
+<p><strong>11. Click on “Ok” button</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/40e52095-6aaf-470c-9be0-5bacab630eb2/ascreenshot.jpeg?tl_px=844,301&amp;br_px=1920,902&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=461,242" class="img-fluid"></p>
+<p><strong>12. Run the pipeline with the tweak parametrs</strong></p>
+<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/7ce33257-5232-42ad-a8ac-5db0085387e0/screenshot.png?tl_px=108,59&amp;br_px=968,540&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
 
 
 
@@ -548,13 +551,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./run_pipeline.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in dolphinNext?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./import_pipeline.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How to import a pipeline to dolphinNext?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./hardcode_tweak_param.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to hardcode tweak parameters for an imported pipeline?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

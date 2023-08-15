@@ -39,7 +39,7 @@
     "href": "import_pipeline.html",
     "title": "2  How to import a pipeline to dolphinNext?",
     "section": "",
-    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “new pipeline” button\n\n4. Click on “Input Pipeline”\n\n5. Click on “Select File” button\n\n6. Choose the “.dn” file\n\n7. Click on “Next” button\n\n8. Click on “Import” button\n\n9. Click on “Complete” button"
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “new pipeline” button\n\n5. Click on “Input Pipeline”\n\n6. Click on “Select File” button\n\n7. Choose the “.dn” file\n\n8. Click on “Next” button\n\n9. Click on “Import” button\n\n10. Click on “Complete” button"
   },
   {
     "objectID": "run_pipeline.html",
@@ -49,11 +49,11 @@
     "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on “Run” button\n\n5. Click on “Create New Run” option\n\n6. Choose the Project or create a new one\n\n7. Click on “Select Project” button\n\n8. Enter run name and click on “Save run”\n\n9. Choose run enviroment\n\n10. Enter work directory\n\n11. Enter the files and values the pipeline need\n\n12. Click on “Run” button\n\n13. Choose “Start” option\n\n14. For more information how to run pipeline go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html\n15. For information about the run page go to  https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html"
   },
   {
-    "objectID": "default_param.html",
-    "href": "default_param.html",
-    "title": "4  How to set pipeline default parameters and run environment?",
+    "objectID": "tweak_and_run.html",
+    "href": "tweak_and_run.html",
+    "title": "4  How to Create a Run with tweak parametrs in DolphinNext?",
     "section": "",
-    "text": "1. Choose your pipeline\n\n2. Click on “Advanced” tab\n\n3. Go to “Pipeline Header Script” section \n\n4. First add for each process an option to change the parameters. To do that, the first step must be access the params variable, then the module name and finally the process name.\n\n**5. To set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.\nA dirty script that receive a csv file and return a txt file with the text of defined the parameters available here …………**\n\n6. Different run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.\n\n7. Save the change\n\n8. Click on “Overwrite” to save"
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on “run” button\n\n5. Choose “Create New Run”\n\n6. Select a project\n\n7. Enter run name and click on “Save run” button\n\n8. Find the module of the parameter you want to change \n\n9. Change the no to yes and click on the settings button \n\n10. Enter the new parametrs for this module, the parametrs that appear is the default in the module (not in the pipeline)\n\n11. Click on “Ok” button\n\n12. Run the pipeline with the tweak parametrs"
   },
   {
     "objectID": "hardcode_tweak_param.html",
@@ -63,37 +63,51 @@
     "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on “Advanced” tab\n\n5. See the default parameter in the “Pipeline Header Script”\n\n6. Find the parameter you want to change and set him to the new value\n\n7. Save the change\n\n8. Click on “Overwrite” or “Save as New Revision” button\n\n9. Export the Tweak pipeline"
   },
   {
-    "objectID": "export_a_pipeline.html",
-    "href": "export_a_pipeline.html",
-    "title": "6  How to export a pipeline from dolphinNext?",
-    "section": "",
-    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Choose your pipeline\n\n5. Click on “Download Pipeline”"
-  },
-  {
     "objectID": "build_process.html",
     "href": "build_process.html",
-    "title": "7  How to build a process in dolphinNext?",
+    "title": "6  How to build a process in dolphinNext?",
     "section": "",
     "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Process” button\n\n5. Enter input output params\n\n6. Write the script\n\n7. For more information go to\nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/process.html"
   },
   {
     "objectID": "build_module.html",
     "href": "build_module.html",
-    "title": "8  How to build a module in dolphinNext?",
+    "title": "7  How to build a module in dolphinNext?",
     "section": "",
     "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
   },
   {
     "objectID": "build_pipeline.html",
     "href": "build_pipeline.html",
-    "title": "9  How to build a pipeline in dolphinNext?",
+    "title": "8  How to build a pipeline in dolphinNext?",
     "section": "",
     "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Click on “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
   },
   {
+    "objectID": "export_a_pipeline.html",
+    "href": "export_a_pipeline.html",
+    "title": "9  How to export a pipeline from dolphinNext?",
+    "section": "",
+    "text": "1. Launch your dolphinnext docker\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on “Pipelines” tab\n\n4. Choose your pipeline\n\n5. Click on “Download Pipeline”"
+  },
+  {
+    "objectID": "default_param.html",
+    "href": "default_param.html",
+    "title": "10  How to set pipeline default parameters and run environment?",
+    "section": "",
+    "text": "1. Choose your pipeline\n\n2. Click on “Advanced” tab\n\n3. Go to “Pipeline Header Script” section \n\n4. First add for each process an option to change the parameters. To do that, the first step must be access the params variable, then the module name and finally the process name.\n\n5. Setting default parameters\nTo set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.\n\n6. Setting run environment\nDifferent run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.\n\n7. Save the change\n\n8. Click on “Overwrite” to save"
+  },
+  {
+    "objectID": "script_for_params.html",
+    "href": "script_for_params.html",
+    "title": "11  Easy way to set pipeline default parameters",
+    "section": "",
+    "text": "1. Downloads the R script from GitHub:\nhttps://github.com/PipeAIRR/params_dolphinnext\n2. Create a csv file of pipeline parameters\nCreate a csv file that contain a table that each row is a parameter you want to defined.\nThe table columns: - module - the module name - process - the process name - parameter - the parameter name - value - the parameter value\n3. Run the script from the command line:\nRscript params_dolphinnext.R csv_file.csv\n4. Copy output \nCopy the text from the file.txt that created to the “Pipeline Header Script” in the “Advanced” tab of the pipeline."
+  },
+  {
     "objectID": "two_dockers.html",
     "href": "two_dockers.html",
-    "title": "10  Is it possible to run a pipeline with 2 dockers?",
+    "title": "12  Is it possible to run a pipeline with 2 dockers?",
     "section": "",
     "text": "1. Choose your pipeline\n\n2. show “Workflow”\n\n3. This process need to run on a “milaboratory/mixcr:latest” docker image\n\n4. This process need to run on a “ssnnm/mhecd4tcr:0.1.0” docker image\n\n5. Click on “Advanced” tab\n\n6. How to define the containers:\nThe docker images needed to defined on the the nextflow.config file as a new process contains “container=” the main docker image and for each process that needed to run with different docker write “WithName:” the process name and in {} “container=” the image docker for this step."
   }

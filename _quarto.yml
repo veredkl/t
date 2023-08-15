@@ -11,28 +11,38 @@ book:
   sidebar:
     style: docked
     background: none
+    collapse-level: 1
   search: true
   site-url: https://PipeAIRR.github.io/pipeAIRR/
   repo-url: https://github.com/PipeAIRR/pipeAIRR/
   repo-actions: [issue]
   sharing: [twitter, facebook, linkedin]
-  #collapse-level: 1
   page-navigation: true
   page-footer: "© Copyright 2022 of YaariLab (gur.yaari@biu.ac.il), website licensed under the [CC BY-NC-ND, 4.0] (https://creativecommons.org/licenses/by-nc-nd/4.0/)"
   chapters:
     - index.qmd
-    - part: "Frequent questions and guides"
+    - part: "Loading a local instance of DolphinNext"
       chapters:
-      - local_dolphinnext.qmd
-      - import_pipeline.qmd
-      - run_pipeline.qmd
-      - default_param.qmd
-      - hardcode_tweak_param.qmd
-      - export_a_pipeline.qmd
-      - build_process.qmd
-      - build_module.qmd
-      - build_pipeline.qmd
-      - two_dockers.qmd
+        - local_dolphinnext.qmd
+    - part: "Importing existing pipelines and running analysis"
+      chapters:
+        - import_pipeline.qmd
+        - run_pipeline.qmd
+    - part: "Tweaking existing pipeline parameters"
+      chapters:
+        - tweak_and_run.qmd
+        - hardcode_tweak_param.qmd
+    - part: "Building analysis pipeline"
+      chapters: 
+        - build_process.qmd
+        - build_module.qmd
+        - build_pipeline.qmd
+        - export_a_pipeline.qmd
+    - part: "Setting default pipeline parameters and run environment"
+      chapters: 
+        - default_param.qmd
+        - script_for_params.qmd
+        - two_dockers.qmd
     
 comments:
   giscus:
@@ -42,6 +52,7 @@ format:
   html:
     theme: [Journal]
     css: [style.css, index.css]
+    validate-yaml: false
 
 
 
