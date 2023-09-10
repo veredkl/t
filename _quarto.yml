@@ -43,6 +43,10 @@ book:
         - default_param.qmd
         - script_for_params.qmd
         - two_dockers.qmd
+    - part: "Other topic"
+      chapters: 
+        - pipeline_header_script.qmd
+        - documentation.qmd
     
 comments:
   giscus:

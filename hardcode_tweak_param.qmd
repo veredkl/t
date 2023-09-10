@@ -9,7 +9,14 @@ format: html
 
 **1. Launch your dolphinnext docker**
 
-**2. Navigate to http://localhost:8080/dolphinnext/**
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2.Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
 
 **3. Choose your pipeline**
 
@@ -23,7 +30,7 @@ format: html
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/d2041520-2d8b-442f-90cf-ca5cf560038e/user_cropped_screenshot.jpeg?tl_px=20,0&br_px=1396,769&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=261,109)
 
-**6. Find the parameter you want to change  and set him to the new value**
+**6. Find the parameter you want to change and set him to a new value**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/a56aba35-3596-4b49-8a18-4bf59cf004e3/user_cropped_screenshot.jpeg?tl_px=22,0&br_px=1398,344&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=306,41)
 

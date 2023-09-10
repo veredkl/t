@@ -9,7 +9,14 @@ format: html
 
 **1. Launch your dolphinnext docker**
 
-**2. Navigate to http://localhost:8080/dolphinnext/**
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2.Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
 
 **3. Click on "Pipelines" tab**
 

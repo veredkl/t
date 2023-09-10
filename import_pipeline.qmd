@@ -9,7 +9,14 @@ format: html
 
 **1. Launch your dolphinnext docker**
 
-**2. Navigate to http://localhost:8080/dolphinnext/**
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2. Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
 
 **3. Click on “Pipelines” tab**
 
@@ -27,7 +34,7 @@ format: html
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/f03b97db-cc16-4a5d-a23c-0f1a3bdefdd8/ascreenshot.jpeg?tl_px=452,0&br_px=1527,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,117)
 
-**7. Choose the ".dn" file**
+**7. Choose the "main.dn" file**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/0e702a55-c382-491b-9c79-842f9521e3a7/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1297,475&force_format=png&width=560.0)
 

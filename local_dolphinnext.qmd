@@ -9,38 +9,32 @@ format:
     css: styles.css
 ---
 
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
 
-<!-- <div> -->
+**Pull the docker image **
 
-<!-- ::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans} [1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700} // ::: -->
 
-**1. Pull DolphinNext-studio docker image:**
-
+```bash
 docker pull ummsbiocore/dolphinnext-studio
+```
 
-<!-- </div> -->
+**Start the container **
 
-<!-- ::: -->
 
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
+1. To ensure that changes made to the database persist each time the container is started, we'll move the database outside of the container. You should select a directory on your local machine for this purpose. For example, in this guide, we'll use the directory ~/export. You can create this directory with the following command;
+```bash
+mkdir ~/export
+```
+2. Running the container;
+```bash
+docker run --privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+```
+3. After successfully launching the container, you'll need to start the MySQL and Apache servers inside the container using the following command;
+```bash
+startup
+```
+4. Now, you can  access DolphinNext through your web browser using the following URL;
+[http://localhost:8080/dolphinnext](http://localhost:8080/dolphinnext)
 
-<!-- <div> -->
+**For more information go to **
 
-**2. Start the container:**
-
-<!-- </div> -->
-
-<!-- ::: -->
-
-**3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like \~/export, for this purpose.**
-
-mkdir \~/export
-
-**4. docker run --privileged -m 10G -p 8080:80 -v \~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash**
-
-**5. After you start the container, you need to start the mysql and apache server using the command: startup**
-
-**6. Navigate to http://localhost:8080/dolphinnext/**
-
-**7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial**
+[https://github.com/dolphinnext/dolphinnext-tutorial](https://github.com/dolphinnext/dolphinnext-tutorial)
