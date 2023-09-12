@@ -1,5 +1,5 @@
 ---
-title: 'Easy way to set pipeline default parameters'
+title: 'An easy way to set pipeline default parameters'
 execute:
   echo: false
   warning: false
@@ -7,7 +7,7 @@ execute:
 format: html
 ---
 
-**1. Downloads the R script from GitHub:**
+**1. Download the "params_dolphinnext.R" script from GitHub**
 
 ```bash
 https://github.com/PipeAIRR/params_dolphinnext
@@ -23,7 +23,7 @@ The table columns:
 - `parameter` - the parameter name
 - `value` - the parameter value
 
-**3. Run the script from the command line:**
+**3. Run the script from the command line**
 
 ```bash
 Rscript params_dolphinnext.R csv_file.csv

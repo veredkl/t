@@ -10,20 +10,25 @@ pipeAIRR is a community resource for adaptive immune receptore repertoire sequen
 
 The pipelines are implemented with [DolphinNext](https://dolphinnext.readthedocs.io/en/latest/index.html#).
 
-We have devided the pipelines into two main sections:
+We have divided the pipelines into two main sections:
+
 1. Pre-processing
 2. Downstream analysis
 
 ##  Repository layout
 
-In each section directory you can find each of the pipelines directories containing the dolphinnext pipeline (XX.dn) as well as the configurations and the nextflow script (XX.nf)
+For each pipeline you can find a directory containing the dolphinnext pipeline (main.dn) as well as the configurations and the nextflow script (main.nf)
 
 
 ## Pre-processing
 
 In this section you can find pipelines to process the sequencer output files, meaning from 'raw reads' into an aligner ready fasta file.
 
-The pipeplines were build based on the [immcantation](https://immcantation.readthedocs.io/en/stable/) framework and spesificly the [pRESTO](https://presto.readthedocs.io/) tool suite.
+In this section you can find pipelines to process the sequencer output files, from ‘raw reads’ into a fasta file ready to be used as an input for an alignment step and other downstream tasks.
+
+The pipeplines were built based on the [immcantation](https://immcantation.readthedocs.io/en/stable/) framework and specifically the [pRESTO](https://presto.readthedocs.io/) tool suite.
+
+
 
 ### Available pipelines:
 
@@ -42,7 +47,7 @@ The pipeplines were build based on the [immcantation](https://immcantation.readt
 ## Downstream analysis
 
 In this section you can find pipelines to analyze processed reads and infer genotype and haplotype.
-The pipeplines were build based on the [Yaari lab framework](https://hub.docker.com/repository/docker/peresay/suite), that contains tools from:
+The pipelines were built based on the [Yaari lab framework](https://hub.docker.com/repository/docker/peresay/suite), which contains tools from:
 - [immcantaton](https://immcantation.readthedocs.io/en/stable/)
 - [VDJbase](vdjbase.org)
 - [TIgGER](https://tigger.readthedocs.io/en/stable/)
@@ -56,6 +61,9 @@ The pipeplines were build based on the [Yaari lab framework](https://hub.docker.
 | PP1  | Processed sequences | -           | -  | [10]        | [pipeAIRR/PP1](https://github.com/pipeAIRR/PP1)  | 8323784    |
 | PP2  | Processed sequences | -           | -  | [6]         | [pipeAIRR/PP2](https://github.com/pipeAIRR/PP2)  | 8323869    |
 | PP3 | Processed sequences | -           | -  | [7]     | [pipeAIRR/PP3](https://github.com/pipeAIRR/PP3) | 8323949   |
+
+ * Processed sequences are the fasta file from the pre-processing step.
+
 
 ## Citations:
 

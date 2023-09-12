@@ -1,5 +1,5 @@
 ---
-title: 'Recommended documentation formt'
+title: 'Recommended documentation format'
 execute:
   echo: false
   warning: false
@@ -7,7 +7,7 @@ execute:
 format: html
 ---
 
-A pipeline for {short summary}. that were produced in the same fashion as those in {papaer}.
+A pipeline for {short summary} that was produced in the same fashion as those in {paper}.
 
 **Library preparation and sequencing method:**
 

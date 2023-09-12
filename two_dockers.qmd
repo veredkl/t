@@ -1,6 +1,6 @@
 ---
-title: 'Is it possible to run a pipeline with 2 dockers?'
-suptitle: 'Example for how to run a pipeline  with 2 docker'
+title: 'Is it possible to run a pipeline with two different containers?'
+suptitle: 'Example for how to run a pipeline with 2 docker'
 execute:
   echo: false
   warning: false
@@ -8,28 +8,28 @@ execute:
 format: html
 ---
 
-**1. Choose your pipeline**
+TLDR; yes you can! Just follow the steps below to configure the containers.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/6263ffbb-6461-4647-b502-3fb8bd3df0e1/user_cropped_screenshot.jpeg?tl_px=0,434&br_px=764,862&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=30,232)
+If you searched this question, it means you encountered the same problem we did, where we have modules or processes that require the use of different containers to perform the task. Nextflow allows you to configure a container for each process with a simple code [for more info see](https://www.nextflow.io/docs/latest/docker.html). The steps below detail the process of configuring the containers and the processes. They are intended for the nextflow.config file as you can configure in DolphinNext.
 
-**2. show "Workflow"**
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/219e8a79-4fd2-458c-826c-54a92dc1ebaa/ascreenshot.jpeg?tl_px=0,0&br_px=773,432&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=242,122)
+***Example for this issue***
 
-**3. This process need to run on a "milaboratory/mixcr:latest" docker image**
+**This process needs to run on a "milaboratory/mixcr:latest" docker image**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/aead2379-4df6-4a33-ab24-611f3429bd9f/ascreenshot.jpeg?tl_px=161,249&br_px=934,682&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
 
-**4. This process need to run on a "ssnnm/mhecd4tcr:0.1.0" docker image**
+**This process needs to run on a "ssnnm/mhecd4tcr:0.1.0" docker image**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/09e017b7-a50f-4666-8a6d-414dcf9e77a1/ascreenshot.jpeg?tl_px=209,421&br_px=982,854&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
 
-**5. Click on "Advanced" tab**
+**Click the on "Advanced" tab**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/0159dc70-5601-4189-96e4-f4cd75eaed5f/ascreenshot.jpeg?tl_px=73,0&br_px=846,432&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,127)
 
-**6. How to define the containers:**
+**How to define the containers**
 
-The docker images needed to defined on the the nextflow.config file as a new process contains "container=" the main docker image and for each process that needed to run with different docker write "WithName:" the process name and in {} "container=" the image docker for this step.
+The docker images need to be defined on the the nextflow.config file as a new process that contains “container=” and the main docker image. For each process that needs to run with a different docker, write “WithName:”, the process name, and in {} “container=” the image docker for this process.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/765388e0-bcde-4839-a261-877786fdf3d8/user_cropped_screenshot.jpeg?tl_px=0,227&br_px=859,708&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=110,138)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-11/f84bef3a-d84b-4fc5-9631-9830b202567b/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1200,776&force_format=png&width=774)
+

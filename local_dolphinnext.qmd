@@ -1,5 +1,5 @@
 ---
-title: 'How to set a local dolphinnext instant?'
+title: 'How to set up a local dolphinnext instance?'
 execute:
   echo: false
   warning: false
@@ -17,10 +17,10 @@ format:
 docker pull ummsbiocore/dolphinnext-studio
 ```
 
-**Start the container **
+**Launch the container **
 
 
-1. To ensure that changes made to the database persist each time the container is started, we'll move the database outside of the container. You should select a directory on your local machine for this purpose. For example, in this guide, we'll use the directory ~/export. You can create this directory with the following command;
+1. To ensure that changes made to the DolphinNext database persist each time the container is launched, we’ll move the database outside of the container. Please select a directory on your local machine for this purpose. For example, in this guide, we’ll use the directory ~/export. To create this directory, use the following command;
 ```bash
 mkdir ~/export
 ```

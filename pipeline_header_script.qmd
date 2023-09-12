@@ -7,6 +7,6 @@ execute:
 format: html
 ---
 
-**For explanation what is the "Pipeline Header Script" go to**
+**For an explanation on what is the "Pipeline Header Script" go to**
 
 [https://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html?highlight=Pipeline%20Header%20Script#pipeline-header-script](https://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html?highlight=Pipeline%20Header%20Script#pipeline-header-script)
