@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines - 10&nbsp; How to set up pipeline default parameters and run environment?</title>
+<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines - 13&nbsp; What is the meaning of “Pipeline Header Script”?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./script_for_params.html" rel="next">
-<link href="./export_a_pipeline.html" rel="prev">
+<link href="./documentation.html" rel="next">
+<link href="./two_dockers.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./default_param.html">Setting default pipeline parameters and run environment</a></li><li class="breadcrumb-item"><a href="./default_param.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set up pipeline default parameters and run environment?</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pipeline_header_script.html">Other topic</a></li><li class="breadcrumb-item"><a href="./pipeline_header_script.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What is the meaning of "Pipeline Header Script"?</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -233,16 +233,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">Setting default pipeline parameters and run environment</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./default_param.html" class="sidebar-item-text sidebar-link active">
+  <a href="./default_param.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set up pipeline default parameters and run environment?</span></span></a>
   </div>
 </li>
@@ -262,16 +262,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
  <span class="menu-text">Other topic</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pipeline_header_script.html" class="sidebar-item-text sidebar-link">
+  <a href="./pipeline_header_script.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What is the meaning of “Pipeline Header Script”?</span></span></a>
   </div>
 </li>
@@ -296,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set up pipeline default parameters and run environment?</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What is the meaning of “Pipeline Header Script”?</span></h1>
 </div>
 
 
@@ -311,22 +311,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>1. Choose your pipeline</strong></p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/9bdfd2d7-7273-44b7-af12-945a14a7ab9c/screenshot.png?tl_px=0,0&amp;br_px=859,481&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>2. Click on the “Advanced” tab</strong></p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/4d81701c-c3b3-48ae-967a-25cee26b04ff/user_cropped_screenshot.jpeg?tl_px=82,0&amp;br_px=1157,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,121" class="img-fluid"></p>
-<p><strong>3. Go to the “Pipeline Header Script” section</strong></p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3c5db261-4a39-4483-af28-aacd554dcea1/screenshot.png?tl_px=0,0&amp;br_px=1120,626&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>4. First add for each process an option to change the parameters. To do that, the first step must be access the params variable, then the module name, and finally the process name.</strong></p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/95fc0d9f-812b-4b4e-a063-663dd96738fc/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=823,103&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>5. Setting the default parameters</strong></p>
-<p>To set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.</p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/11c7db77-fca3-4a11-a719-d7bbd1c44583/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=953,281&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>6. Setting the run environment</strong></p>
-<p>Different run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.</p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/17a0f813-2b2e-49ba-a431-ccf731c4dfa0/screenshot.jpeg?tl_px=0,0&amp;br_px=561,224&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>7. Save the changes</strong></p>
-<p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/ac4704a2-ebfd-4514-bda2-bf7105552afd/user_cropped_screenshot.jpeg?tl_px=17,0&amp;br_px=1092,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,71" class="img-fluid"></p>
+<p><strong>For an explanation on what is the “Pipeline Header Script” go to</strong></p>
+<p><a href="https://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html?highlight=Pipeline%20Header%20Script#pipeline-header-script">https://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html?highlight=Pipeline%20Header%20Script#pipeline-header-script</a></p>
 
 
 
@@ -568,13 +554,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./export_a_pipeline.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to export a pipeline from DolphinNext?</span></span>
+      <a href="./two_dockers.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Is it possible to run a pipeline with two different containers?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./script_for_params.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">An easy way to set pipeline default parameters</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./documentation.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Recommended documentation format</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

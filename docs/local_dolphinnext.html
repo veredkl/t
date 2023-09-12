@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines - 1&nbsp; How to set a local dolphinnext instant?</title>
+<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines - 1&nbsp; How to set up a local dolphinnext instance?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -77,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./local_dolphinnext.html">Loading a local instance of DolphinNext</a></li><li class="breadcrumb-item"><a href="./local_dolphinnext.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./local_dolphinnext.html">How to set up a local dolphinnext instance?</a></li><li class="breadcrumb-item"><a href="./local_dolphinnext.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set up a local dolphinnext instance?</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -92,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines</a> 
+      <a href="./">pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/PipeAIRR/pipeAIRR/" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -137,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Loading a local instance of DolphinNext</span></a>
+ <span class="menu-text">How to set up a local dolphinnext instance?</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -146,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./local_dolphinnext.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set up a local dolphinnext instance?</span></span></a>
   </div>
 </li>
       </ul>
@@ -169,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./run_pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in DolphinNext?</span></span></a>
   </div>
 </li>
       </ul>
@@ -186,13 +220,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tweak_and_run.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to create a run with tweaked parametrs in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./hardcode_tweak_param.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to hardcode tweak parameters for an imported pipeline?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to hardcode tweaked parameters for an imported pipeline?</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,25 +243,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_process.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">How to build a process in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">How to build a process in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">How to build a module in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">How to build a module in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">How to build a pipeline in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">How to build a pipeline in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./export_a_pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to export a pipeline from dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to export a pipeline from DolphinNext?</span></span></a>
   </div>
 </li>
       </ul>
@@ -244,19 +278,42 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./default_param.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set pipeline default parameters and run environment?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set up pipeline default parameters and run environment?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./script_for_params.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Easy way to set pipeline default parameters</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">An easy way to set pipeline default parameters</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./two_dockers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Is it possible to run a pipeline with 2 dockers?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Is it possible to run a pipeline with two different containers?</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Other topic</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pipeline_header_script.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What is the meaning of “Pipeline Header Script”?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Recommended documentation format</span></span></a>
   </div>
 </li>
       </ul>
@@ -274,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set up a local dolphinnext instance?</span></h1>
 </div>
 
 
@@ -289,24 +346,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
-<!-- <div> -->
-<!-- ::: {.flex .w-full .flex-row .mr-4 .flex .flex-grow .flex-row .bg-opacity-0 .font-sans} [1.]{.group-one .flex .h-10 .w-10 .flex-shrink-0 .cursor-pointer .flex-col .items-center .justify-center .rounded-full .font-sans .text-base .bg-indigo-50 .text-indigo-500 .font-bold .mr-4} [**Pull DolphinNext-studio docker image:**]{.m-0 .flex .h-auto .w-full .flex-grow-0 .flex-col .justify-center .align-middle .leading-6 .text-blueGray-700} // ::: -->
-<p><strong>1. Pull DolphinNext-studio docker image:</strong></p>
-<p>docker pull ummsbiocore/dolphinnext-studio</p>
-<!-- </div> -->
-<!-- ::: -->
-<!-- ::: {.box-border .flex .h-auto .w-full .flex-col .rounded-2xl .bg-white .p-4 .shadow} -->
-<!-- <div> -->
-<p><strong>2. Start the container:</strong></p>
-<!-- </div> -->
-<!-- ::: -->
-<p><strong>3. Shifting the database outside the container ensures persistent changes across container restarts. Select a directory on your machine to mount, like ~/export, for this purpose.</strong></p>
-<p>mkdir ~/export</p>
-<p><strong>4. docker run –privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash</strong></p>
-<p><strong>5. After you start the container, you need to start the mysql and apache server using the command: startup</strong></p>
-<p><strong>6. Navigate to http://localhost:8080/dolphinnext/</strong></p>
-<p><strong>7. For more information go to https://github.com/dolphinnext/dolphinnext-tutorial</strong></p>
+<p><strong>Pull the docker image </strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull ummsbiocore/dolphinnext-studio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Launch the container </strong></p>
+<ol type="1">
+<li>To ensure that changes made to the DolphinNext database persist each time the container is launched, we’ll move the database outside of the container. Please select a directory on your local machine for this purpose. For example, in this guide, we’ll use the directory ~/export. To create this directory, use the following command;</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> ~/export</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Running the container;</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--privileged</span> <span class="at">-m</span> 10G <span class="at">-p</span> 8080:80 <span class="at">-v</span> ~/export:/export <span class="at">-ti</span> ummsbiocore/dolphinnext-studio /bin/bash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>After successfully launching the container, you’ll need to start the MySQL and Apache servers inside the container using the following command;</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">startup</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Now, you can access DolphinNext through your web browser using the following URL; <a href="http://localhost:8080/dolphinnext">http://localhost:8080/dolphinnext</a></li>
+</ol>
+<p><strong>For more information go to </strong></p>
+<p><a href="https://github.com/dolphinnext/dolphinnext-tutorial">https://github.com/dolphinnext/dolphinnext-tutorial</a></p>
 
 
 
@@ -544,7 +603,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="PipeAIRR/pipeAIRR" data-repo-id="" data-category="General" data-category-id="" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="PipeAIRR/pipeAIRR" data-repo-id="R_kgDOKGU0HA" data-category="General" data-category-id="DIC_kwDOKGU0HM4CZQBQ" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
@@ -564,7 +623,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">© Copyright 2022 of YaariLab (gur.yaari@biu.ac.il), website licensed under the [CC BY-NC-ND, 4.0] (https://creativecommons.org/licenses/by-nc-nd/4.0/)<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/PipeAIRR/pipeAIRR/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center">Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND, 4.0</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/PipeAIRR/pipeAIRR/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

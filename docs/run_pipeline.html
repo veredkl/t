@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines - 3&nbsp; How to run a pipeline in dolphinNext?</title>
+<title>pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines - 3&nbsp; How to run a pipeline in DolphinNext?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./import_pipeline.html">Importing existing pipelines and running analysis</a></li><li class="breadcrumb-item"><a href="./run_pipeline.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in dolphinNext?</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./import_pipeline.html">Importing existing pipelines and running analysis</a></li><li class="breadcrumb-item"><a href="./run_pipeline.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in DolphinNext?</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -91,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">pipeAIRR - Github repository for Adaptive immune receptor repertoire pipelines</a> 
+      <a href="./">pipeAIRR - Github repository for Adaptive immune receptor repertoire DolphinNext pipelines</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/PipeAIRR/pipeAIRR/" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -136,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
- <span class="menu-text">Loading a local instance of DolphinNext</span></a>
+ <span class="menu-text">How to set up a local dolphinnext instance?</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -145,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./local_dolphinnext.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set a local dolphinnext instant?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to set up a local dolphinnext instance?</span></span></a>
   </div>
 </li>
       </ul>
@@ -168,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./run_pipeline.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in DolphinNext?</span></span></a>
   </div>
 </li>
       </ul>
@@ -185,13 +219,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tweak_and_run.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to create a run with tweaked parametrs in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./hardcode_tweak_param.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to hardcode tweak parameters for an imported pipeline?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">How to hardcode tweaked parameters for an imported pipeline?</span></span></a>
   </div>
 </li>
       </ul>
@@ -208,25 +242,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_process.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">How to build a process in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">How to build a process in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">How to build a module in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">How to build a module in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./build_pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">How to build a pipeline in dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">How to build a pipeline in DolphinNext?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./export_a_pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to export a pipeline from dolphinNext?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">How to export a pipeline from DolphinNext?</span></span></a>
   </div>
 </li>
       </ul>
@@ -243,19 +277,42 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./default_param.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set pipeline default parameters and run environment?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How to set up pipeline default parameters and run environment?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./script_for_params.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Easy way to set pipeline default parameters</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">An easy way to set pipeline default parameters</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./two_dockers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Is it possible to run a pipeline with 2 dockers?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Is it possible to run a pipeline with two different containers?</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Other topic</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pipeline_header_script.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What is the meaning of “Pipeline Header Script”?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Recommended documentation format</span></span></a>
   </div>
 </li>
       </ul>
@@ -273,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in dolphinNext?</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">How to run a pipeline in DolphinNext?</span></h1>
 </div>
 
 
@@ -288,17 +345,21 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>1. Launch your dolphinnext docker</strong></p>
-<p><strong>2. Navigate to http://localhost:8080/dolphinnext/</strong></p>
+<p><strong>1. Launch your DolphinNext docker</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">OUTDIR</span><span class="op">=</span><span class="va">${replace_with_your_directory}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--privileged</span> <span class="at">-m</span> 10G <span class="at">-p</span> 8080:80 <span class="at">-v</span> <span class="va">$OUTDIR</span>:/export <span class="at">-ti</span> ummsbiocore/dolphinnext-studio /bin/bash</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># inside the docker</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">startup</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>2. Navigate to <a href="http://localhost:8080/dolphinnext/">http://localhost:8080/dolphinnext/</a></strong></p>
 <p><strong>3. Choose your pipeline</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/f516d58e-48ba-4fb9-a27d-f0ed0011cca0/user_cropped_screenshot.jpeg?tl_px=0,0&amp;br_px=1075,532&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=29,134" class="img-fluid"></p>
-<p><strong>4. Click on “Run” button</strong></p>
+<p><strong>4. Click on the “Run” button</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/1f77a406-0d31-4d3c-ad57-0e6aed555a95/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=491,67" class="img-fluid"></p>
-<p><strong>5. Click on “Create New Run” option</strong></p>
+<p><strong>5. Click on the”Create New Run” option</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/8b412f39-47a3-4595-b75b-86ad62be2ebf/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=444,87" class="img-fluid"></p>
 <p><strong>6. Choose the Project or create a new one</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/c4fe9a21-36f9-4c0c-84ac-2a25e50670da/user_cropped_screenshot.jpeg?tl_px=100,0&amp;br_px=1820,902&amp;force_format=png&amp;width=560.0" class="img-fluid"></p>
-<p><strong>7. Click on “Select Project” button</strong></p>
+<p><strong>7. Click on the “Select Project” button</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/320c2c1a-879f-4729-a600-116f423e3931/ascreenshot.jpeg?tl_px=844,301&amp;br_px=1920,902&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=276,161" class="img-fluid"></p>
 <p><strong>8. Enter run name and click on “Save run”</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/5d00fffd-63d0-482a-8ca4-634868c3e110/user_cropped_screenshot.jpeg?tl_px=692,0&amp;br_px=1767,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,111" class="img-fluid"></p>
@@ -306,15 +367,16 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/c66fdace-d335-43f1-81b3-1a1d92764cc0/ascreenshot.jpeg?tl_px=154,276&amp;br_px=1229,877&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,138" class="img-fluid"></p>
 <p><strong>10. Enter work directory</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/2c9085db-0f52-4f5b-89a7-88a96847f72c/ascreenshot.jpeg?tl_px=163,301&amp;br_px=1238,902&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,165" class="img-fluid"></p>
-<p><strong>11. Enter the files and values the pipeline need</strong></p>
+<p><strong>11. Enter the files and values the pipeline needs</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3d4eb93c-4ff2-4d2d-b9f6-438a973209d6/ascreenshot.jpeg?tl_px=287,240&amp;br_px=1362,841&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=262,138" class="img-fluid"></p>
-<p><strong>12. Click on “Run” button</strong></p>
+<p><strong>12. Click on the “Run” button</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/88edbfb1-c5f8-42cd-b510-461771ebc9a5/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=459,66" class="img-fluid"></p>
-<p><strong>13. Choose “Start” option</strong></p>
+<p><strong>13. Choose the “Start” option</strong></p>
 <p><img src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3f1fc929-63d8-4335-91ad-eda36250b115/ascreenshot.jpeg?tl_px=844,0&amp;br_px=1920,600&amp;force_format=png&amp;width=560.0&amp;wat_scale=50&amp;wat=1&amp;wat_opacity=0.7&amp;wat_gravity=northwest&amp;wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&amp;wat_pad=409,92" class="img-fluid"></p>
-<p><strong>14. For more information how to run pipeline go to </strong></p>
-<p>https://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html</p>
-<p><strong>15. For information about the run page go to </strong> https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html</p>
+<p><strong>14. For more information on how to run the pipeline go to</strong></p>
+<p><a href="https://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html">https://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html</a></p>
+<p><strong>15. For information about the run page go to</strong></p>
+<p><a href="https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html">https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html</a></p>
 
 
 
@@ -552,7 +614,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="PipeAIRR/pipeAIRR" data-repo-id="" data-category="General" data-category-id="" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="PipeAIRR/pipeAIRR" data-repo-id="R_kgDOKGU0HA" data-category="General" data-category-id="DIC_kwDOKGU0HM4CZQBQ" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
@@ -562,7 +624,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./tweak_and_run.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to Create a Run with tweak parametrs in DolphinNext?</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">How to create a run with tweaked parametrs in DolphinNext?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -572,7 +634,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">© Copyright 2022 of YaariLab (gur.yaari@biu.ac.il), website licensed under the [CC BY-NC-ND, 4.0] (https://creativecommons.org/licenses/by-nc-nd/4.0/)<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/PipeAIRR/pipeAIRR/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center">Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND, 4.0</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/PipeAIRR/pipeAIRR/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
